@@ -9,8 +9,8 @@ const HomePage = () => {
       <img src={Logo} alt="logo" />
       <h1 className='font-extrabold text-6xl mt-5 mb-5 text-white'>BUSCADOR DE GITHUB</h1>
       <div className="font-serif space-x-4">
-        <Button to="/repoSearch">Repositorios</Button>
-        <Button to="/userSearch">Usuarios</Button>
+        <Button to="/repoSearch">REPOSITORIOS</Button>
+        <Button to="/userSearch">USUARIOS</Button>
       </div>
     </div>
   );

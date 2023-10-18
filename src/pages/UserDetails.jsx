@@ -27,26 +27,25 @@ const UserDetails = () => {
     return <div>Cargando...</div>;
   }
 
-  // Estilos para el sombreado
   const textShadowStyle = {
-    textShadow: '4px 4px 4px black', // Ajusta los valores según tus preferencias
+    textShadow: '4px 4px 4px black', 
   };
 
   return (
     <>
     <div  className="flex flex-col items-center text-center relative">
-      <h2 className="text-7xl font-extrabold my-11">Detalles del Usuario</h2>
+      <h2 className="text-7xl font-extrabold my-11">DETALLES DEL USUARIO</h2>
       <div className="absolute top-6 left-4">
       <Button to="/userSearch">
-        Volver a la página de búsqueda
+        VOLVER A LA PÁGINA DE BÚSQUEDA
       </Button>
       </div>
 
       <img src={userData.avatar_url} alt={`Avatar de ${userData.login}`}  style={textShadowStyle} className='h-96 w-96 my-28'/>
-      <p  style={textShadowStyle} className='text-5xl '>Nombre de usuario: {userData.login}</p>
-      <p  style={textShadowStyle} className='text-5xl '>Seguidores: {userData.followers}</p>
-      <p  style={textShadowStyle} className='text-5xl '>Seguidos: {userData.following}</p>
-      <p style={textShadowStyle} className='text-5xl no-underline hover:underline' > <a href={userData.html_url} target="_blank">Ver en GitHub</a></p>
+      <p  style={textShadowStyle} className='text-5xl '>NOMBRE DE USUARIO: <span className='text-blue-400'>  {userData.login}</span> </p>
+      <p  style={textShadowStyle} className='text-5xl '>SEGUIDORES:  <span className='text-blue-400'> {userData.followers}</span> </p>
+      <p  style={textShadowStyle} className='text-5xl '>SEGUIDOS:   <span className='text-blue-400'> {userData.following}</span></p>
+      <p style={textShadowStyle} className='text-5xl no-underline hover:underline' > <a href={userData.html_url} target="_blank">VER EN GITHUB</a></p>
       <div className="absolute top-6 right-4 ">
         <img src={Logo} alt="logo" style={textShadowStyle} className="w-16 " />
         </div>

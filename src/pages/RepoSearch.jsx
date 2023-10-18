@@ -41,15 +41,15 @@ const RepoSearchPage = () => {
   return (
     <div className="text-center">
       <div className="absolute top-6 left-4">
-        <Button to="/">Volver a la Home</Button>
+        <Button to="/">VOLVER AL MENU</Button>
       </div>
       <div className="absolute top-6 right-4">
-        <Button to="/userSearch" className="ml-auto">Ir a buscar Usuarios</Button> {/* Agrega ml-auto para alinear a la derecha */}
+        <Button to="/userSearch" className="ml-auto">IR A BUSCAR USUARIOS</Button> 
       </div>
       <div className="mt-10">
         <img className="mx-auto" src={Logo} alt="logo"/> 
       </div>
-      <h1 className="font-extrabold my-5 text-4xl">Buscar Repositorios</h1>
+      <h1 className="font-extrabold my-5 text-4xl">BUSCAR REPOSITORIOS</h1>
       <form onSubmit={handleSearchSubmit} className="center-content mt-4">
         <div className="flex justify-center items-center">
           <TextField

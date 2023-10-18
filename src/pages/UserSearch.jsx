@@ -28,15 +28,15 @@ const UserSearchPage = () => {
     <>
     <div className='text-center'>
       <div className="absolute top-6 left-4">
-      <Button to="/">Volver a la Home</Button>
+      <Button to="/">VOLVER AL MENÚ</Button>
       </div>
       <div className="absolute top-6 right-4">
-        <Button to="/repoSearch">Ir a buscar Repositorios</Button>
+        <Button to="/repoSearch">IR A BUSCAR REPOSITORIOS</Button>
       </div>
-      <div className="mt-10"> {/* Agrega margen superior para separar la imagen */}
-        <img className="mx-auto" src={Logo} alt="logo" /> {/* mx-auto para centrar la imagen horizontalmente */}
+      <div className="mt-10"> 
+        <img className="mx-auto" src={Logo} alt="logo" /> 
       </div>
-      <h1 className="font-extrabold my-5 text-4xl">Buscar Usuarios de GitHub</h1>
+      <h1 className="font-extrabold my-5 text-4xl">BUSCAR USUARIOS EN GITHUB</h1>
       <div className="flex justify-center items-center">
       <TextField
         className='h-14'
