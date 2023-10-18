@@ -62,7 +62,7 @@ const RepoSearchPage = () => {
             value={searchQuery}
             onChange={handleSearchChange}
           />
-          <button className="bg-teal-300 hover:bg-lime-400 text-black font-bold py-2 px-4 rounded" type="submit">
+          <button className="bg-rgb-purple hover:bg-blue-400 text-black font-bold py-2 px-4 rounded" type="submit">
             <Search className="w-6 h-6 mr-2" /> Buscar
           </button>
         </div>
@@ -71,7 +71,7 @@ const RepoSearchPage = () => {
         <ul className="list-disc text-left mt-4 pl-4">
           {searchResults.map((repo) => (
             <ListItemText disablePadding key={repo.id}>
-              <Link to={`/repo/${repo.full_name}`}  className="block text-black hover:text-gray-950 font hover:bg-lime-400 rounded-md px-4 py-2">
+              <Link to={`/repo/${repo.full_name}`}  className="block hover:text-gray-950 font hover:bg-blue-400 rounded-md px-4 py-2">
                 {repo.name}
               </Link>
             </ListItemText>

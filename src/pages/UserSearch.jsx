@@ -48,14 +48,14 @@ const UserSearchPage = () => {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
-      <button className="bg-teal-300 hover:bg-lime-400 text-black font-bold py-2 px-4 rounded" onClick={handleSearch}>
+      <button className="bg-rgb-purple hover:bg-blue-400 text-black font-bold py-2 px-4 rounded" onClick={handleSearch}>
       <Search className="w-6 h-6 mr-2" /> Buscar</button>
       </div>
       <div className="flex justify-center">
         <ul className="list-disc text-left mt-4 pl-4">
         {users.map((user) => (
           <ListItemText disablePadding key={user.id}>
-            <Link to={`/user/${user.login}`} className="block text-black hover:text-gray-950 font-bold hover:bg-lime-400 rounded-md px-4 py-2">{user.login}</Link>
+            <Link to={`/user/${user.login}`} className="block  hover:text-gray-950 font-bold hover:bg-blue-400 rounded-md px-4 py-2">{user.login}</Link>
           </ListItemText>
         ))}
         </ul>
